@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FA71A66-9A46-425D-969D-B12CB0AA8982}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PetShop</RootNamespace>
+    <AssemblyName>PetShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadanimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadanimais.Designer.cs">
+      <DependentUpon>cadanimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadclientes.Designer.cs">
+      <DependentUpon>cadclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadprodutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadprodutos.Designer.cs">
+      <DependentUpon>cadprodutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="codanimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="codanimal.Designer.cs">
+      <DependentUpon>codanimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="codcli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="codcli.Designer.cs">
+      <DependentUpon>codcli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="codpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="codpro.Designer.cs">
+      <DependentUpon>codpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="descanimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descanimal.Designer.cs">
+      <DependentUpon>descanimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="desccli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desccli.Designer.cs">
+      <DependentUpon>desccli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="descprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descprod.Designer.cs">
+      <DependentUpon>descprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="petshopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="petshopDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>petshopDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sobre.Designer.cs">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadanimais.resx">
+      <DependentUpon>cadanimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadclientes.resx">
+      <DependentUpon>cadclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadprodutos.resx">
+      <DependentUpon>cadprodutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="codanimal.resx">
+      <DependentUpon>codanimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="codcli.resx">
+      <DependentUpon>codcli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="codpro.resx">
+      <DependentUpon>codpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descanimal.resx">
+      <DependentUpon>descanimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desccli.resx">
+      <DependentUpon>desccli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descprod.resx">
+      <DependentUpon>descprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sobre.resx">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="petshopDataSet.xsc">
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="petshopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>petshopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="petshopDataSet.xss">
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="petshopDataSet1.xsc">
+      <DependentUpon>petshopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="petshopDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>petshopDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="petshopDataSet1.xss">
+      <DependentUpon>petshopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99825.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadeado.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
